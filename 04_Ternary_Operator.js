@@ -10,9 +10,7 @@ if(age >= 18){
 console.log(type);
 
 // with ternary operator
-
 let ternaryType = age >= 18 ? 'Ternary Adult' : 'Ternary Child' ;
-
 console.log(ternaryType);
 
 //Nested Statement
@@ -25,11 +23,9 @@ if(age >= 18){
     type = 'Young'
   }
 }
-
 console.log(type);
 
 // Nested ternary operator
-
 let nestedTernary = age >= 18 ? "Nested Adult" 
                               : age < 10 
                               ? "Nested Child"
