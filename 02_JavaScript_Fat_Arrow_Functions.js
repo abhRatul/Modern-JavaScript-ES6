@@ -72,7 +72,8 @@ javascript2.printLibraries()
 
 /* 
 Notes
-Arrow function tar immediate parent context theke capture kore.
-Call,Apply,Bind not used in arrow function.
-"Inside an event handler, if I create a custom callback function, I must use a normal function, not an arrow function, so that 'this' correctly refers to the element that triggered the event.
+# Arrow function tar immediate parent context theke capture kore.
+# Call,Apply,Bind not used in arrow function.
+# "Inside an event handler, if I create a custom callback function, I must use a normal function, not an arrow function, so that 'this' correctly refers to the element that triggered the event.
+# Arrow function diye constructor function make kora jabe na. Because arrow function er nijosso kono this context thake na. New keyword diye egulur maddhome object make kora jay na.
 */
