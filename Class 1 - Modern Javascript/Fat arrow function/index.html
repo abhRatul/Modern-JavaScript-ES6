@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fat arrow function</title>
+</head>
+
+<body>
+  <h1>Fat Arrow Function</h1>
+  <!-- Dom Example -->
+  <input type="text" name="" id="search" placeholder="Search text...">
+  <p class="display"></p>
+  <p class="thanks"></p>
+
+
+  <!-- DOM Exmaple -->
+  <script>
+    let search = document.querySelector('#search');
+    let display = document.querySelector('.display');
+    let thanks = document.querySelector('.thanks');
+
+
+    function show() {
+      display.innerHTML = this.value
+      console.log(this);
+      // setTimeout(function(){
+      //   console.log(this);
+      //   thanks.innerHTML = `Thanks for typing ${this.value}`
+      // },2000)
+      setTimeout(()=>{
+        console.log(this);
+        thanks.innerHTML = `Thanks for typing ${this.value}`
+      },2000)
+    }
+
+    search.addEventListener('keyup', show)
+  </script>
+
+
+
+  <script src="./1-fat-arrow-function.js"></script>
+</body>
+
+</html>
